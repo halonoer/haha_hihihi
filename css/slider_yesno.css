@@ -1,0 +1,190 @@
+/* body {
+	background: #000;
+    font-family: sans-serif;
+    text-align: center;
+} */
+.ques {
+    color: darkslateblue;
+}
+.sliding {
+  position: relative;
+  display: inline-block;
+  width: 99px;
+  height: 35px;
+}
+
+.sliding input {display:none;}
+
+.geser {
+  position: absolute;
+  cursor: pointer;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffcc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.geser:before {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 5px;
+  bottom: 2px;
+  background-color: darkslategrey;
+      -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.22);
+  -webkit-transition: .4s;
+  transition: all 0.4s ease-in-out;
+}
+.geser:after {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  content: "YA";
+    font-size: 12px;
+    text-align: left !important;
+    vertical-align: center !important;
+    line-height: 33px;
+  padding-left: 0;
+    width: 100px;
+    color:#fff;
+    height: 36px;
+    border-radius: 35px;
+    background-color: #27A243;
+    -webkit-transform: translateX(-63px);
+    -ms-transform: translateX(-63px);
+    transform: translateX(-63px);
+    transition: all 0.4s ease-in-out;
+}
+
+input:checked + .geser:after {
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  /*width: 235px;*/
+  padding-left: 25px;
+}
+
+input:checked + .geser:before {
+  background-color: #000000;
+}
+
+input:checked + .geser:before {
+  -webkit-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  transform: translateX(60px);
+}
+
+/* Rounded gesers */
+.geser.bunder {
+  border-radius: 33px;
+}
+
+.geser.bunder:before {
+  border-radius: 50%;
+}
+.pilihan-no {
+	position: absolute;
+	left: 0;
+	color: darkslategrey;
+    text-align: right !important;
+    
+    font-size: 12px;
+    width: calc(100% - 25px);
+    height: 50px;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+.slide {
+  position: absolute;
+  cursor: pointer;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffcc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slide:before {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 5px;
+  bottom: 2px;
+  background-color: darkslategrey;
+      -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.22);
+  -webkit-transition: .4s;
+  transition: all 0.4s ease-in-out;
+}
+.slide:after {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  content: "YA";
+    font-size: 12px;
+    text-align: left !important;
+    vertical-align: center !important;
+    line-height: 33px;
+  padding-left: 0;
+    width: 100px;
+    color:#fff;
+    height: 36px;
+    border-radius: 35px;
+    background-color: #27A243;
+    -webkit-transform: translateX(-63px);
+    -ms-transform: translateX(-63px);
+    transform: translateX(-63px);
+    transition: all 0.4s ease-in-out;
+}
+
+input:checked + .slide:after {
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  /*width: 235px;*/
+  padding-left: 25px;
+}
+
+input:checked + .slide:before {
+  background-color: #000000;
+}
+
+input:checked + .slide:before {
+  -webkit-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  transform: translateX(60px);
+}
+
+/* Rounded gesers */
+.slide.bunder {
+  border-radius: 33px;
+}
+
+.slide.bunder:before {
+  border-radius: 50%;
+}
+.pilihan-close {
+	position: absolute;
+	left: 0;
+	color:beige;
+    text-align: right !important;
+    
+    font-size: 12px;
+    width: calc(100% - 25px);
+    height: 50px;
+    line-height: 45px;
+    cursor: pointer;
+}

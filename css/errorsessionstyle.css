@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+/* *{
+
+
+} */
+.oops{
+    margin: 0;
+    padding-top: 250px;
+    box-sizing: border-box;
+    font-family: 'Kablammo', cursive;
+font-size: 150px;
+font-weight: 600;
+outline: none;
+background: linear-gradient(135deg,#01a3a4 0%,#ff9f43 25%,#f368e0 50%,#ff6b6b 75%,#feca57 100%);
+background-size: 350%;
+-webkit-background-clip:text;
+-webkit-text-fill-color: transparent;
+animation: animate 10s linear infinite;
+
+}
+@keyframes animate{
+to{
+    background-position: 350%;
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .oops {
+      font-size: 75px;
+      padding-top: 100px;
+    }
+  }
